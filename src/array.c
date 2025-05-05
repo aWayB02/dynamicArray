@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "createArray.h"
+#include "array.h"
 #include <stdlib.h>
 
 void initArray(DynamicArray *arr, size_t initalCapacity) {
@@ -14,4 +14,8 @@ void append(DynamicArray *arr, int element) {
         arr->data = realloc(arr->data, arr->capacity * sizeof(int));
     }
     arr->data[arr->size++] = element;
+}
+
+void free_array(DynamicArray *arr) {
+    free(arr->data);
 }

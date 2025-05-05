@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "createArray.h"
+#include "array.h"
 
 int main() {
     
@@ -21,5 +21,7 @@ int main() {
         }
     }
     printf("\n");
+    free_array(&arr);
 
+    return 0;
 }

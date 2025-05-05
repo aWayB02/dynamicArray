@@ -10,3 +10,4 @@ typedef struct
 
 void initArray(DynamicArray *arr, size_t initalCapacity);
 void append(DynamicArray *arr, int element);
+void free_array(DynamicArray *arr);
