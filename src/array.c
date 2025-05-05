@@ -1,5 +1,6 @@
-#include <stdio.h>
 #include "array.h"
+
+#include <stdio.h>
 #include <stdlib.h>
 
 void initArray(DynamicArray *arr) {
@@ -17,6 +18,4 @@ void append(DynamicArray *arr, int element) {
     arr->data[arr->size++] = element;
 }
 
-void free_array(DynamicArray *arr) {
-    free(arr->data);
-}
+void free_array(DynamicArray *arr) { free(arr->data); }
