@@ -8,6 +8,6 @@ typedef struct
 } DynamicArray;
 
 
-void initArray(DynamicArray *arr, size_t initalCapacity);
+void initArray(DynamicArray *arr);
 void append(DynamicArray *arr, int element);
 void free_array(DynamicArray *arr);

@@ -2,7 +2,8 @@
 #include "array.h"
 #include <stdlib.h>
 
-void initArray(DynamicArray *arr, size_t initalCapacity) {
+void initArray(DynamicArray *arr) {
+    size_t initalCapacity = 2;
     arr->data = malloc(initalCapacity * sizeof(int));
     arr->size = 0;
     arr->capacity = initalCapacity;

@@ -5,7 +5,7 @@
 int main() {
     
     DynamicArray arr;
-    initArray(&arr, 2);
+    initArray(&arr);
     int n; scanf("%d", &n);
     while (n != -1)
     {
