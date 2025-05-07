@@ -21,7 +21,21 @@ int main() {
         }
     }
     printf("\n");
-    free_array(&arr);
+
+    scanf("%d", &n);
+    while (n != -1) {
+        delete_element(&arr, n);
+        scanf("%d", &n);
+    }
+
+    printf("---------------------------------\n");
+    for (size_t i = 0; i < arr.size; i++) {
+        printf("%d ", arr.data[i]);
+        if (i < arr.size - 1) {
+            printf(" ");
+        }
+    }
+    printf("\n");
 
     return 0;
 }
