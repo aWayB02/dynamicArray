@@ -1,6 +1,6 @@
 SRC = src
 CC = gcc
-CFLAGS = -Wall -Wextra -Werror -c
+CFLAGS = -Wall -Wextra -Werror -c -g
 BUILD = build
 
 OBJECTS = $(BUILD)/main.o $(BUILD)/array.o

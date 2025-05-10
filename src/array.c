@@ -37,7 +37,7 @@ void delete_element(DynamicArray *arr, int element) {
     if (index == arr->size) {
         return;
     } else {
-        for (size_t i = index; i < arr->size; i++) {
+        for (size_t i = index; i < arr->size - 1; i++) {
             arr->data[i] = arr->data[i + 1];
         }
         arr->size--;
